@@ -3,6 +3,8 @@
 import { Instagram, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear(); // Get the current year
+
   return (
     <footer id="contact" className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -107,7 +109,10 @@ export default function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Maraki Perfume. All rights reserved. | Privacy Policy | Terms of Service
+            Copyrights © {currentYear} Maraki Perfume. Developed by{" "}
+            <a href="https://yared.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-yellow-600 transition-colors">
+              Y-Global System Solution
+            </a>
           </p>
         </div>
       </div>
